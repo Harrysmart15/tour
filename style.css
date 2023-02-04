@@ -1,0 +1,664 @@
+<body>
+
+
+@Import Url("Https://Fonts.Googleapis.Com/Css2?Family=Barlow+Condensed:wght@500&Display=Swap");
+@Import Url("Https://Fonts.Googleapis.Com/Css2?Family=Satisfy&Display=Swap");
+@Import Url("Https://Fonts.Googleapis.Com/Css2?Family=Roboto:wght@300&Display=Swap");
+
+* {
+  Box-Sizing: Border-Box;
+  Margin: 0;
+}
+
+Body,
+Html {
+  Margin: 0;
+  Padding: 0;
+}
+
+/------------------------Scroll Bar-----------------------/
+::-Webkit-Scrollbar {
+  Width: 20px;
+}
+
+::-Webkit-Scrollbar-Track {
+  Box-Shadow: Inset 0 0 5px Grey;
+  Border-Radius: 10px;
+}
+
+::-Webkit-Scrollbar-Thumb {
+  Background-Color: #Fde65e;
+  Border-Radius: 10px;
+}
+
+::-Webkit-Scrollbar-Thumb:hover {
+  Background-Color: #Fde02f;
+}
+
+/========================Nav Bar=========================/
+.Nav-Bar {
+  Display: Flex;
+  Flex-Flow: Row Wrap;
+  Width: 100%;
+  Height: 90px;
+  Background-Color: #Fff;
+  Box-Shadow: 3px 3px 10px Lightslategray;
+  Align-Items: Center;
+  Justify-Content: Center;
+  Position: Sticky;
+  Top: 0;
+  Z-Index: 1;
+}
+
+.Logo {
+  Flex: 1;
+  Font-Size: 40px;
+  Padding: 20px;
+  Margin-Left: 50px;
+  Font-Family: Satisfy;
+}
+
+Ul.Menu {
+  Flex: 1;
+  Display: Flex;
+  Flex-Flow: Row Wrap;
+}
+
+.Menu Li {
+  Flex: 1;
+  List-Style-Type: None;
+  Font-Size: 16px;
+  Font-Family: "Barlow Condensed";
+  Text-Align: Center;
+}
+
+.Menu Li A {
+  Text-Decoration: None;
+  Color: #000;
+  Text-Transform: Uppercase;
+}
+
+.Menu Li A:hover {
+  Color: Midnightblue;
+  Text-Decoration: Underline;
+}
+
+/=============================Banner=============================/
+.Banner {
+  Background-Image: Url("Https://Res.Cloudinary.Com/Dxssqb6l8/Image/Upload/V1605294054/Young-Woman-Enjoying-Beautiful-Scenery-Of-Lago-Di-Braies-Italy-Picjumbo-Com_aa0fvw.Jpg");
+  Background-Size: Cover;
+  Background-Repeat: No-Repeat;
+  Background-Position: Center;
+  /Overflow: Hidden;/
+  Width: 100%;
+  Height: 100vh;
+  Text-Align: Center;
+  Position: Relative;
+  Display: Flex;
+  Justify-Content: Center;
+  Align-Items: Center;
+}
+
+.Banner::Before {
+  Content: "";
+  Position: Absolute;
+  Display: Block;
+  Top: 0;
+  Left: 0;
+  Bottom: 0;
+  Right: 0;
+  Background-Color: Rgba(0, 0, 0, 0.2);
+  /Background-Size: 100%;/
+}
+
+.Banner-Text-Item {
+  Position: Absolute;
+  Width: 100%;
+  Text-Align: Center;
+  Display: Flex;
+  Flex-Flow: Column Wrap;
+  Justify-Content: Center;
+  Align-Items: Center;
+}
+
+.Banner-Heading {
+  Flex: 1;
+}
+
+.Banner-Heading H1 {
+  Font-Size: 100px;
+  Font-Weight: Normal;
+  Color: #Fde02f;
+  Font-Family: Satisfy;
+}
+
+.Banner-Text-Item .Form {
+  Flex: 1;
+  Display: Flex;
+  Flex-Flow: Row Wrap;
+  Justify-Content: Center;
+  Align-Items: Center;
+  Background-Color: Rgba(255, 255, 255, 0.2);
+  Border-Radius: 5px;
+  Width: 70%;
+  Padding: 1% 2%;
+}
+
+.Banner-Text-Item Input,
+.Banner-Text-Item .Date,
+.Banner-Text-Item .Book {
+  Padding: 15px;
+  Margin-Right: 10px;
+  Font-Size: 18px;
+  Font-Family: Roboto;
+  Border-Radius: 5px;
+  Outline: 0;
+  Border: None;
+}
+
+.Banner-Text-Item Input {
+  Width: 50%;
+  Flex: 2;
+}
+
+.Banner-Text-Item .Date {
+  Width: 20%;
+  Flex: 1;
+}
+
+.Banner-Text-Item .Book {
+  Width: 20%;
+  Flex: 1;
+}
+
+.Banner-Text-Item .Book {
+  Text-Decoration: None;
+  Color: #000;
+  Text-Transform: Uppercase;
+  Padding: 15px;
+  Cursor: Pointer;
+  Background-Color: #Fde02f;
+  Font-Size: 16px;
+  Font-Weight: Normal;
+  Font-Family: "Barlow Condensed";
+  Width: 20%;
+}
+
+/===========================Services===========================/
+.Services {
+  Display: Flex;
+  Flex-Flow: Row;
+  Align-Items: Center;
+  Justify-Content: Center;
+}
+
+.Service-Item {
+  Flex: 1;
+  Padding: 50px 10px;
+  Border: Lightcyan Solid 1px;
+  Text-Align: Center;
+  Margin: 180px 50px;
+  Transition: All 1s;
+  Display: Flex;
+  Flex-Flow: Column;
+  Align-Items: Center;
+  Justify-Content: Center;
+}
+
+.Service-Item:hover {
+  Box-Shadow: 3px 3px 20px Lightsteelblue;
+}
+
+.Service-Item H2 {
+  Font-Family: Barlow Condensed;
+  Font-Size: 18px;
+  Width: 120px;
+  Color: #001f38;
+  Flex: 1;
+}
+
+.Service-Item Img {
+  Width: 60px;
+  Height: 60px;
+  Flex: 1;
+}
+
+/=============================Places===============================/
+.Places-Text {
+  Text-Align: Center;
+  Margin-Bottom: 50px;
+}
+
+.Places-Text Small {
+  Font-Family: Roboto;
+  Color: #Ffc342;
+  Font-Size: 15px;
+  Font-Weight: Bolder;
+}
+
+.Places-Text H2 {
+  Font-Family: Barlow Condensed;
+  Font-Size: 55px;
+  Color: #191d34;
+  Letter-Spacing: 1px;
+}
+
+.Cards {
+  Display: Grid;
+  Grid-Template-Columns: Repeat(3, 1fr);
+  Grid-Template-Rows: Repeat(2, 1fr);
+  Grid-Gap: 30px;
+  Align-Items: Center;
+  Justify-Items: Center;
+  Text-Align: Center;
+}
+
+.Card {
+  Border: 1px Solid Lightgray;
+  Box-Shadow: 2px 2px 6px 0 Rgba(0, 0, 0, 0.3);
+  Border-Top-Left-Radius: 8px;
+  Border-Top-Right-Radius: 8px;
+  Width: 80%;
+  Height: Auto;
+}
+
+.Card Img {
+  Max-Width: 100%;
+  Height: 300px;
+  Border-Radius: 8px;
+  Cursor: Pointer;
+}
+
+.Cards .Text {
+  Padding: 20px;
+  Font-Family: Barlow Condensed;
+  Line-Height: 50px;
+}
+
+.Cards .Card-Box {
+  Display: Flex;
+  Flex-Flow: Row;
+  Background-Color: #Fde02f;
+  Font-Size: 18px;
+  Font-Family: Roboto;
+  Align-Items: Center;
+  Justify-Content: Center;
+  Text-Align: Center;
+}
+
+.Cards .Time {
+  Flex: 1;
+}
+
+.Cards .Location {
+  Flex: 2;
+}
+
+.Cards .Cost {
+  Color: #4cafad;
+  Font-Size: 20px;
+}
+
+/------------Zoom In Photos--------------/
+.Zoom-Img {
+  Float: Left;
+  Position: Relative;
+  Width: 100%;
+  Height: 320px;
+  Overflow: Hidden;
+}
+
+.Zoom-Img .Img-Card {
+  Position: Absolute;
+  Overflow: Hidden;
+}
+
+.Img-Card Img {
+  -Webkit-Transition: 0.8s Ease;
+  Transition: 0.8s Ease;
+}
+
+.Card:hover .Zoom-Img Img {
+  -Webkit-Transform: Scale(1.1);
+  Transform: Scale(1.1);
+}
+
+/=========================About Us=========================/
+.About {
+  Display: Flex;
+  Flex-Flow: Row Wrap;
+  Align-Items: Center;
+  Justify-Content: Center;
+  Padding: 150px;
+}
+
+.About-Img {
+  Flex: 1;
+}
+
+.About-Img Img {
+  Width: 500px;
+  Height: 700px;
+  Box-Shadow: 2px 2px 6px 0 Rgba(0, 0, 0, 0.3);
+}
+
+.About-Text {
+  Flex: 1;
+  /Width: 100px;/
+  Display: Flex;
+  Flex-Flow: Column Wrap;
+}
+
+.About-Text Small,
+.About-Text P,
+.About-Text Input,
+.About-Text A {
+  Flex: 1;
+  Font-Family: Roboto;
+}
+
+.About-Text Small {
+  Color: #Ffc342;
+  Font-Size: 18px;
+}
+
+.About-Text H2 {
+  Flex: 1;
+  Font-Family: Barlow Condensed;
+  Font-Size: 60px;
+  Color: #191d34;
+  Width: 450px;
+}
+
+.About-Text Label {
+  Padding-Bottom: 10px;
+  Color: #506172;
+  Font-Weight: Bolder;
+  Font-Family: Roboto;
+  Letter-Spacing: 1px;
+}
+
+.About-Text P {
+  Width: 500px;
+  Line-Height: 30px;
+  Color: #506172;
+  Font-Weight: Bolder;
+  Padding: 50px 0;
+}
+
+.About-Text A {
+  Background-Color: #Fff;
+  Border: 2px Solid #014b85;
+  Text-Decoration: None;
+  Border-Radius: 5px;
+  Width: 180px;
+  Padding: 20px;
+  Text-Align: Center;
+  Margin-Top: 50px;
+  Color: #014b85;
+  Font-Weight: Bolder;
+  Font-Size: 14px;
+}
+
+.About-Text A:hover {
+  Background-Color: #014b85;
+  Color: #Fff;
+}
+
+/===============Footer===================/
+.Footer {
+  Background-Image: Url("Https://Res.Cloudinary.Com/Dxssqb6l8/Image/Upload/V1605293781/Pine-Tree_mq2sgp.Jpg");
+  Background-Size: Cover;
+  Background-Repeat: No-Repeat;
+  Background-Position: Center;
+  Width: 100%;
+  Height: 670px;
+  Position: Relative;
+  Display: Flex;
+  Flex-Flow: Row Wrap;
+  Justify-Content: Center;
+  Align-Items: Center;
+}
+
+.Footer::Before {
+  Position: Absolute;
+  Content: "";
+  Display: Block;
+  Background-Color: Rgba(0, 0, 36, 0.8);
+  Top: 0;
+  Left: 0;
+  Bottom: 0;
+  Right: 0;
+}
+
+.Footer .Links {
+  Position: Relative;
+  Color: #Fff;
+  Flex: 1;
+  Display: Flex;
+  Flex-Flow: Column;
+  Justify-Content: Center;
+  Align-Items: Center;
+}
+
+.Links Ul {
+  List-Style-Type: None;
+}
+
+.Links H3 {
+  Font-Family: Barlow Condensed;
+  Font-Weight: Normal;
+  Font-Size: 23px;
+  Margin-Bottom: 15px;
+}
+
+.Links Li {
+  Font-Family: Roboto;
+  Cursor: Pointer;
+  Padding: 15px 0;
+}
+
+.Links Li:hover {
+  Color: #Ffa801;
+}
+
+/==========================Responsive=============================/
+@Media All And (Max-Width: 1172px) {
+  .Banner-Text-Item .Form {
+    Display: Flex;
+    Flex-Flow: Column;
+    Justify-Content: Center;
+    Align-Items: Center;
+    Width: 50%;
+  }
+
+  .Banner-Text-Item .Form Input,
+  .Banner-Text-Item .Form .Date,
+  .Banner-Text-Item .Form A {
+    Flex: 1;
+    Margin-Bottom: 5px;
+    Font-Size: 14px;
+  }
+
+  .Banner-Text-Item .Form Input {
+    Width: 60%;
+  }
+
+  .Banner-Text-Item .Form .Date {
+    Width: 30%;
+  }
+
+  .Banner-Text-Item .Form .Book {
+    Width: 10%;
+    Font-Size: 14px;
+  }
+
+  .Banner-Heading H1 {
+    Font-Size: 60px;
+  }
+}
+
+@Media All And (Max-Width: 1414px) {
+  .Banner-Text-Item .Form Input {
+    Width: 40%;
+  }
+
+  .Banner-Text-Item .Form .Date {
+    Width: 30%;
+  }
+
+  .Banner-Text-Item .Form .Book {
+    Width: 20%;
+    Font-Size: 14px;
+  }
+}
+
+@Media All And (Max-Width: 942px) {
+  .Nav-Bar {
+    Display: Flex;
+    Flex-Flow: Column Wrap;
+    Justify-Content: Center;
+    Align-Items: Center;
+    Width: 100%;
+    Height: Auto;
+    Text-Align: Center;
+    Position: Static;
+  }
+
+  .Logo {
+    Flex: 1;
+    Font-Size: 30px;
+    Margin: 10px Auto;
+    Font-Family: Satisfy;
+    Color: #Fde02f;
+  }
+
+  .Nav-Bar Ul {
+    Display: None;
+  }
+
+  .Nav-Bar Ul Li {
+    Flex: 1;
+    Margin-Bottom: 5px;
+    Font-Size: 14px;
+  }
+
+  .Services {
+    Display: Flex;
+    Flex-Flow: Column Wrap;
+  }
+
+  .Services .Service-Item {
+    Flex: 1;
+    Margin-Bottom: -130px;
+    Width: 400px;
+  }
+
+  .Places-Text {
+    Margin-Top: 200px;
+  }
+}
+
+@Media All And (Max-Width: 928px) {
+  .Banner .Form Input,
+  A {
+    Font-Size: 12px;
+  }
+}
+
+@Media All And (Max-Width: 1173px) {
+  .Banner .Form {
+    Background-Color: Transparent;
+  }
+}
+
+@Media All And (Max-Width: 1194px) {
+  .Places .Card-Box P {
+    Font-Size: 14px;
+  }
+}
+
+@Media All And (Max-Width: 1086px) {
+  .Places .Cards .Text {
+    Line-Height: 40px;
+  }
+
+  .Cards .Text .H2 {
+    Font-Size: 12px;
+  }
+
+  .Cards .Img-Card Img {
+    Height: 260px;
+  }
+}
+
+@Media All And (Max-Width: 974px) {
+  .Cards {
+    Display: Grid;
+    Grid-Template-Columns: Repeat(1, 1fr);
+    Grid-Template-Rows: Repeat(6, 1fr);
+    Grid-Gap: 20px;
+  }
+
+  .Card {
+    Width: 300px;
+    Height: 500px;
+    Margin: Auto;
+  }
+
+  .Cards .Text {
+    Padding: 5px;
+    Font-Family: Barlow Condensed;
+  }
+}
+
+@Media All And (Max-Width: 1334px) {
+  .About-Img Img {
+    Width: 300px;
+    Height: 500px;
+  }
+}
+
+@Media All And (Max-Width: 1116px) {
+  .About {
+    Display: Flex;
+    Flex-Flow: Column Wrap;
+    Justify-Content: Center;
+    Align-Items: Center;
+  }
+
+  .About-Img {
+    Flex: 1;
+    Margin-Bottom: 20px;
+  }
+
+  .About-Text {
+    Flex: 1;
+    Margin: Auto;
+    Text-Align: Center;
+    Display: Flex;
+    Flex-Flow: Column;
+    Justify-Content: Center;
+    Align-Items: Center;
+  }
+
+  .About-Text H2 {
+    Font-Size: 35px;
+  }
+
+  .About-Img Img {
+    Width: 400px;
+    Height: 400px;
+  }
+}
+
+@Media All And (Max-Width: 708px) {
+  .Footer {
+    Width: 100%;
+    Height: 670px;
+    Position: Relative;
+    Display: Flex;
+    Flex-Flow: Column Wrap;
+    Justify-Content: Center;
+    Align-Items: Center
+    </body>
